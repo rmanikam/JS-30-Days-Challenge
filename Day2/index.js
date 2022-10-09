@@ -226,9 +226,15 @@ console.log(matches);
 let txt1 =
   "He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.";
 
-// The \D character matches any character that is NOT a digit.
+// The \d character matches any character that is a digit.
 //We added the g (global) flag to match all non-digit characters and
 // replaced them with empty strings.
+// 
+
+
+//Use the regular expression \d+, which means any digit from 0 to 9
+// (\d) repeated one or more times (+). The qualifier g will make the search
+// global (ie: don't stop on the first hit).
 const replaced = txt1.match(/\d+/g);
 console.log(replaced);
 
